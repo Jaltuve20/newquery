@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro e Inicio de Sesión - Clima Rapido C.A</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+    <link rel="icon" href="img/ICONO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+</head>
+<body>
+    
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/Sin nombre.png" alt="Clima Rapido Logo"> <!-- Asegúrate de reemplazar 'logo.png' con tu logo real -->
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="repuestos.html">Repuestos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                    <button class="register-btn"onclick="window.location.href='auth.html'"><i class="fa fa-user-plus"></i></button>
+                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <button id="darkModeToggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="auth-section">
+            <div class="container">
+                <div class="auth-container animate__animated animate__fadeIn">
+                    <div class="auth-form-container" id="loginForm">
+                        <h2 class="animate__animated animate__fadeInDown">Iniciar Sesión</h2>
+                        <form>
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="input-group">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Contraseña" required>
+                            </div>
+                            <button type="submit" class="animate__animated animate__pulse">Iniciar Sesión</button>
+                        </form>
+                        <p>¿No tienes una cuenta? <a href="#" id="showRegister">Regístrate</a></p>
+                    </div>
+                    <div class="auth-form-container" id="registerForm" style="display: none;">
+                        <h2 class="animate__animated animate__fadeInDown">Registro</h2>
+                        <form>
+                            <div class="input-group">
+                                <i class="fas fa-user"></i>
+                                <input type="text" placeholder="Nombre completo" required>
+                            </div>
+                            <div class="input-group">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Correo electrónico" required>
+                            </div>
+                            <div class="input-group">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Contraseña" required>
+                            </div>
+                            <div class="input-group">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Confirmar contraseña" required>
+                            </div>
+                            <button type="submit" class="animate__animated animate__pulse">Registrarse</button>
+                        </form>
+                        <p>¿Ya tienes una cuenta? <a href="#" id="showLogin">Inicia sesión</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clima Rapido. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="/scripts.js"></script>
+    <script src="auth-scripts.js"></script>
+</body>
+</html>

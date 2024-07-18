@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repuestos - Clima Rapido C.A</title>
+    <link rel="stylesheet" href="repuestos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/ICONO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/Sin nombre.png" alt="Clima Rapido Logo"> <!-- Asegúrate de reemplazar 'logo.png' con tu logo real -->
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="repuestos.html">Repuestos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                    <button class="register-btn"onclick="window.location.href='auth.html'"><i class="fa fa-user-plus"></i></button>
+                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <button id="darkModeToggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="repuestos-page">
+        <div class="container">
+            <h1>Repuestos</h1>
+            <div class="repuestos-content">
+                <aside class="filter-sidebar">
+                    <h2>Filtros</h2>
+                    <form id="filter-form">
+                        <div class="filter-section">
+                            <h3>Categoría</h3>
+                            <label><input type="checkbox" name="category" value="refrigeracion"> Refrigeración</label>
+                            <label><input type="checkbox" name="category" value="lavado"> Lavado</label>
+                            <label><input type="checkbox" name="category" value="cocina"> Cocina</label>
+                            <label><input type="checkbox" name="category" value="aire-acondicionado"> Aire Acondicionado</label>
+                        </div>
+                        <div class="filter-section">
+                            <h3>Marca</h3>
+                            <label><input type="checkbox" name="brand" value="samsung"> Samsung</label>
+                            <label><input type="checkbox" name="brand" value="lg"> LG</label>
+                            <label><input type="checkbox" name="brand" value="whirlpool"> Whirlpool</label>
+                            <label><input type="checkbox" name="brand" value="mabe"> Mabe</label>
+                        </div>
+                        <div class="filter-section">
+                            <h3>Precio</h3>
+                            <label>Mínimo: <input type="number" name="min-price" min="0"></label>
+                            <label>Máximo: <input type="number" name="max-price" min="0"></label>
+                        </div>
+                        <button type="submit">Aplicar filtros</button>
+                    </form>
+                </aside>
+                <section class="products-grid">
+                    <!-- Aquí irían los productos, por ejemplo: -->
+                    <div class="product-card">
+                        <img src="img/repuesto1.png" alt="Repuesto 1">
+                        <h3>Nombre del Repuesto</h3>
+                        <p>Descripción breve del repuesto</p>
+                        <span class="price">$120.00</span>
+                        <button>Añadir al carrito</button>
+                    </div>
+                    <!-- Más tarjetas de productos aquí -->
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clima Rapido. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="repuestos.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Rapido C.A</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/ICONO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="logo">
+                    <img src="img/Sin nombre.png" alt="Clima Rapido Logo"> <!-- Asegúrate de reemplazar 'logo.png' con tu logo real -->
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="repuestos.html">Repuestos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button class="search-btn"><i class="fa fa-search"></i></button>
+                    <button class="register-btn"onclick="window.location.href='auth.html'"><i class="fa fa-user-plus"></i></button>
+                    <button class="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+                </div>
+                <button id="darkModeToggle" class="dark-mode-toggle">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+    
+
+    <main>
+        <section id="repuestos" class="hero">
+            <div class="container">
+                <h1 id="typewriter-text">Repuestos y Accesorios Originales</h1>
+                <p>Encuentra todo lo que necesitas para tus electrodomésticos<br>en Clima Rapido C.A</p>
+            </div>
+        </section>        
+
+        <section id="accesorios" class="featured-categories">
+            <div class="container">
+                <h2>Categorías Destacadas</h2>
+                <div class="category-grid">
+                    <div class="category-item">
+                        <img src="img/refrig.jpg" alt="Refrigeración">
+                        <h3>Refrigeración</h3>
+                    </div>
+                    <div class="category-item">
+                        <img src="img/lav.png" alt="Lavado">
+                        <h3>Lavado</h3>
+                    </div>
+                    <div class="category-item">
+                        <img src="img/cocina.png" alt="Cocina">
+                        <h3>Cocina</h3>
+                    </div>
+                    <div class="category-item">
+                        <img src="img/aire.png" alt="Aire Acondicionado">
+                        <h3>Aire Acondicionado</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="location">
+            <div class="container">
+                <div class="location-content">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d737.9081756397294!2d-67.36107982085356!3d9.910014359643382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2aa9e669ad456d%3A0xb54f4cb25026f94b!2sClima%20R%C3%A1pido%20C.A!5e1!3m2!1ses-419!2spe!4v1721262199581!5m2!1ses-419!2spe"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div class="location-info">
+                        <h2>Nuestra Ubicación</h2>
+                        <p>Nos encontramos en: Calle Mellado, con C. Páez, San Juan de Los Morros 2301, Guárico, Venezuela</p>
+                        <p>Horario de atención: Lunes a Viernes de 9:00 AM a 6:00 PM</p>
+                        <p>Teléfono: (+58)2464322150</p>
+                        <p>Email: info@climarapido.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotrosid" class="nosotros"></section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clima Rapido. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
